@@ -1,9 +1,11 @@
 package memory;
 
 /**
+ * 栈爆StackOverflowError
+ *
  * Created by ShaoJin on 2014/12/19 0019.
  */
-public class OOM {
+public class StackOverflowErrorExample {
 
     static int length = 0;
 
@@ -15,7 +17,8 @@ public class OOM {
     public static void nest() {
         length++;
         try {
-            nest(); // 无限循环调用导致调用栈溢出抛出StackOverflowError :]
+            // 无限循环调用导致调用栈溢出抛出StackOverflowError :] 可以通过设置-Xss的值来增加线程调用栈的大小，默认1m
+            nest();
 
         } catch (Throwable e) {
             System.out.println("StackLength:" + length);

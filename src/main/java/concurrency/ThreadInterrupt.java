@@ -1,6 +1,8 @@
 package concurrency;
 
 /**
+ * 线程中止测试
+ *
  * Created by ShaoJin on 2014/12/22 0022.
  */
 public class ThreadInterrupt {
