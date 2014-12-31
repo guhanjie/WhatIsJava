@@ -19,8 +19,9 @@ public class OutOfMemoryErrorExample {
         List<Object> list = new ArrayList<>();
 
         while (true) {
-            // 死循环创建对象并保持引用导致内存溢出，配置-Xmx来设置堆最大值
+            // 死循环创建对象并保持引用导 致内存溢出，配置-Xmx来设置堆最大值
             list.add(new Object());
+
         }
     }
 

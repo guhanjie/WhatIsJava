@@ -1,7 +1,8 @@
-package gc;
+package memory.gc;
 
 /**
- * 检测是下循环引用GC问题
+ * 检测JVM的根搜索算法，不会产生循环引用导致无法GC的问题
+ *
  * VM args -XX:+PrintGC
  * Created by ShaoJin on 2014/12/23 0023.
  */
