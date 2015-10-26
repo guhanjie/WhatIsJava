@@ -1,4 +1,4 @@
-package lambda;
+package jdk8.lambda;
 
 /**
  * Created by Liuxey on 2015/7/31.
